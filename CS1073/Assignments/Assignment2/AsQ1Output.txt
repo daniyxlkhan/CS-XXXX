@@ -1,0 +1,11 @@
+Hours Worked by Luffy: 40
+Hours Worked by Zoro: 35
+Sales made by Luffy: 3
+Sales made by Zoro: 5
+Pay of Luffy: 799.2
+Pay of Zoro: 585.5
+
+Hours Worked by Luffy: 0
+Hours Worked by Zoro: 0
+Sales made by Luffy: 0
+Sales made by Zoro: 0

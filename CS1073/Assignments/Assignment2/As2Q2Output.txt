@@ -1,0 +1,20 @@
+Guest's Name: Annie Easley
+Room Number: 73
+Amount Owed: 12.3
+
+Guest's Name: Alans Turing
+Room Number: 342
+Amount Owed: 22.5
+
+Guest's Name: Clarence Ellis
+Room Number: 214
+Amount Owed: 26.0
+
+Guest's Name: Grace Hopper
+Room Number: 742
+Amount Owed: 21.0
+
+Annie Easley Tip: 2.4600000000000004
+Alans Turing Tip: 4.5
+Clarence Ellis Tip: 4.68
+Grace Hopper Tip: 3.15

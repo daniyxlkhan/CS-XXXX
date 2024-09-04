@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"BusinessTicket","l":"BusinessTicket(String, int, double, boolean)","u":"%3Cinit%3E(java.lang.String,int,double,boolean)"},{"p":"<Unnamed>","c":"BusinessTicket","l":"computeCost(double)"},{"p":"<Unnamed>","c":"BusinessTicket","l":"recliningSeat"}];updateSearchResults();

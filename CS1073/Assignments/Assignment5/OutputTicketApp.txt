@@ -1,0 +1,11 @@
+Passenger & Trip Distance	Bags	Cost
+=========================	=====	========
+Grace Hopper (1150.0km) 	2	$1,642.50
+Joy Buolamwini (820.0km) 	1	$660.00
+Tim Berners-Lee (755.0km) 	2	$958.25
+Margaret Hamilton (690.0km) 	0	$988.25
+Barbara Liskov (1402.0km) 	3	$1,571.40
+Shafi Goldwasser (975.0km) 	1	$1,034.00
+Alan Turing (3327.0km)  	4	$3,429.95
+Lynn Conway (1766.0km)  	0	$1,409.90
+Jeannette Wing (5003.0km)	3	$3,888.95

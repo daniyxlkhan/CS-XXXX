@@ -1,0 +1,2 @@
+The triangle t1 is a equilateral triangle
+The triangle t2 is a right angle triangle
