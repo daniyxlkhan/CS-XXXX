@@ -5,6 +5,7 @@ This is class represents a VIP attendee which is a subclass of Attendee
 public class VIPAttendee extends Attendee {
     private boolean group;
     private final double DEFAULTFEE;
+    
     public VIPAttendee(boolean group) {
         super(4); // VIPAttendee attend all 4 days
         this.group = group;

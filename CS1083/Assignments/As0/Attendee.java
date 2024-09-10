@@ -30,7 +30,7 @@ public class Attendee {
     public boolean removeEvent(Event eventToBeRemoved) {
         boolean removed = false;
         for (int i = 0; i < eventsAttended; i++) {
-            if (events[i] == eventToBeRemoved) {
+            if (events[i].getID() == eventToBeRemoved.getID()) {
                 for (int j = i; j < eventsAttended-1; j++) {
                     events[j] = events[j+1];
                 }

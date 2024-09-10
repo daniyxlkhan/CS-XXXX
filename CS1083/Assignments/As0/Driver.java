@@ -70,6 +70,7 @@ public class Driver {
         VIPattendee1.addEvent(event9);
 
         System.out.println(VIPattendee1.textuallistOfEvents()); // VIP Attendee attending same artist events
+        System.out.println("Joining with group? " + VIPattendee2.attendingWithGroup());
         System.out.println("Total Price: " + VIPattendee1.costOfTicket());
 
         // TEST CASE 4
@@ -82,8 +83,9 @@ public class Driver {
         VIPattendee2.addEvent(event8);
         VIPattendee2.addEvent(event5);
         VIPattendee2.addEvent(event4);
-
+        
         System.out.println(VIPattendee2.textuallistOfEvents()); // VIP Attendee attending different artist events
+        System.out.println("Joining with group? " + VIPattendee2.attendingWithGroup());
         System.out.println("Total Price: " + VIPattendee2.costOfTicket());
     }
 }
