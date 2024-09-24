@@ -17,8 +17,6 @@ public class Shirt implements Wearable {
         switch (type) {
             case "T-shirt":
                 return (season.equals("Spring") || season.equals("Summer"));
-            case "Flannel":
-                return (season.equals("Autumn") || season.equals("Winter"));
             case "Sweater":
                 return (season.equals("Autumn") || season.equals("Winter"));
             case "Hawaiian":

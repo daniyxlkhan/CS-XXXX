@@ -11,6 +11,6 @@ public class Sneaker extends Shoes {
     }
 
     public boolean inFashion(String season) {
-        return season.equals("Winter") ? false : true;
+        return !season.equals("Winter");
     }
 }
