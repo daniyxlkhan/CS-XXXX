@@ -4,8 +4,8 @@ This is class represents a VIP attendee which is a subclass of Attendee
 */
 public class VIPAttendee extends Attendee {
     private boolean group;
-    private final double DEFAULTFEE;
-    
+    private final double DEFAULTFEE; // fee if they go to the same artist's event
+
     public VIPAttendee(boolean group) {
         super(4); // VIPAttendee attend all 4 days
         this.group = group;
@@ -20,6 +20,19 @@ public class VIPAttendee extends Attendee {
         group = !group;
     }
 
+    public double costOfTicket() {
+        Event events[] = super.listOfEvents();
+        String firstArtist = events[0].getArtistName();
+        double cost = 209.99;
+
+        for (int i = 0; i < events.length-1; i++) {
+            if (firstArtist != events[i+1].getArtistName()) {
+                cost = super.costOfTicket();
+            }
+        }
+        return cost;
+    }
+    /* 
     public double costOfTicket() {
         double cost = DEFAULTFEE;
         Event events[] = super.listOfEvents();
@@ -42,4 +55,5 @@ public class VIPAttendee extends Attendee {
 
         return cost;
     }
+        */
 }

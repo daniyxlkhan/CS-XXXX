@@ -27,7 +27,21 @@ public class Attendee {
         eventsAttended++;
     }
 
+    /* Fixing method after assignment grading (mine was maintaining the order even though i didnt have to*/
+
     public boolean removeEvent(Event eventToBeRemoved) {
+        boolean removed = false;
+        for (int i =0; i < eventsAttended; i++) {
+            if (events[i].getID() == eventToBeRemoved.getID()) {
+                events[i] = events[eventsAttended-1];
+                eventsAttended--;
+                removed = true;
+            }
+        }
+        return removed;
+    }
+
+    /* public boolean removeEvent(Event eventToBeRemoved) {
         boolean removed = false;
         for (int i = 0; i < eventsAttended; i++) {
             if (events[i].getID() == eventToBeRemoved.getID()) {
@@ -41,7 +55,7 @@ public class Attendee {
         }
         return removed;
     }
-
+    */
     public Event[] listOfEvents() {
         return events;
     }
