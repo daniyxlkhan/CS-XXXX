@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+
 public abstract class AudioItems extends Item {  
     private String artist;
     private int releaseYear;
@@ -17,6 +19,7 @@ public abstract class AudioItems extends Item {
     }
 
     public String toString() {
-        return super.toString() + " (" + artist + ")\tCost: $" + super.getInitialPrice();
+        NumberFormat cost = NumberFormat.getCurrencyInstance();
+        return super.toString() + " (" + artist + ")\tCost: " + cost.format(super.getInitialPrice());
     }
 }

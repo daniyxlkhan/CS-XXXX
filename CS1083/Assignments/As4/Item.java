@@ -29,9 +29,9 @@ public abstract class Item implements Purchasable, Comparable<Item> {
         }
         
         // if title were aplhabetically; compare the prices
-        if (this.initialPrice < other.getInitialPrice()) {
+        if (this.getSellingPrice() < other.getSellingPrice()) {
             return -1;
-        } else if (this.initialPrice > other.getInitialPrice()) {
+        } else if (this.getSellingPrice() > other.getSellingPrice()) {
             return 1;
         } else {    // if prices and titles were equal return 0
             return 0;  

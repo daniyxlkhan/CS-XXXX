@@ -48,20 +48,28 @@ public class Catalogue {
         return catalogue;
     }
 
-    public void sortItem(ArrayList<Item> itemsCopy) {
-            
+    public void selectSort() {
+        for(int outer = 0; outer < items.size()-1; outer++) {
+            int min = outer;
+            for(int inner = outer+1; inner < items.size(); inner++) {
+                if (items.get(min).compareTo(items.get(inner)) > 0) {
+                    min = inner;
+                }
+            }
+            Item temp = items.get(outer);
+            items.set(outer, items.get(min));
+            items.set(min, temp);
+        }
     }
 
     public int searchItemBinary(Item i) {
-        ArrayList<Item> itemsCopy = items;
-        sortItem(itemsCopy);
-
         int start = 0;
-        int end = itemsCopy.size()-1;
+        int end = items.size()-1;
+        selectSort();
 
         while(start <= end) {
             int middle = (start+end)/2;
-            int difference = itemsCopy.get(middle).compareTo(i);
+            int difference = items.get(middle).compareTo(i);
 
             if (difference == 0) {
                 return middle;
@@ -76,7 +84,14 @@ public class Catalogue {
         return -1;
     }
 
-
-    
-
+    public boolean isSorted() {
+        for (int i = 0; i < items.size() - 1; i++) {
+            if (items.get(i).compareTo(items.get(i + 1)) > 0) { // If any item is greater than the next, the list is not sorted
+                return false;
+            }
+        }
+        return true;     
+    }
+     
 }
+    

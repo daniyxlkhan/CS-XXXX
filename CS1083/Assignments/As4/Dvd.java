@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+
 public class Dvd extends Item{
 
     public Dvd(String title, double price) {
@@ -9,6 +11,7 @@ public class Dvd extends Item{
     }
 
     public String toString() {
-        return super.toString() + "\tCost: $" + getSellingPrice();
+        NumberFormat cost = NumberFormat.getCurrencyInstance();
+        return super.toString() + "\tCost: " + cost.format(getSellingPrice());
     }
 }
