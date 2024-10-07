@@ -23,6 +23,7 @@ public class Catalogue {
         if (storeValue >= i.getInitialPrice()) {
             storeValue -= i.getInitialPrice();
             items.add(i);
+            selectSort(); // sorting the arraylist as soon as user adds a new item
             return true;
         } else {
             return false;
@@ -65,7 +66,6 @@ public class Catalogue {
     public int searchItemBinary(Item i) {
         int start = 0;
         int end = items.size()-1;
-        selectSort();
 
         while(start <= end) {
             int middle = (start+end)/2;

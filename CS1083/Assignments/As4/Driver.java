@@ -18,7 +18,7 @@ public class Driver {
         catalogue1.buyItem(record2);
         catalogue1.buyItem(cassette1);
 
-        System.out.println("Is the catalogue sorted?(Before selling items): " + catalogue1.isSorted());
+        System.out.println("Is the catalogue sorted? " + catalogue1.isSorted());
         System.out.println();
         
         
@@ -35,7 +35,6 @@ public class Driver {
         // TEST CASE 4: Add an item to catalogue when store does not have enough money to buy it
         catalogue2.buyItem(cassette2);
 
-        System.out.println("Is the catalogue sorted?(After selling items): " + catalogue1.isSorted());
 
         catalogue1.buyItem(dvd1);
         catalogue1.buyItem(dvd2);
