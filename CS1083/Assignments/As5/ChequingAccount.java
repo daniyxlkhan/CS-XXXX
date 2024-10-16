@@ -6,6 +6,6 @@ public class ChequingAccount extends Account{
     }
 
     public void applyInterest() throws NegativeException {
-        super.depositMoney(super.getBalance()*(INTEREST_RATE/100));
+        setBalance(super.getBalance()*(INTEREST_RATE+1));
     }
 }

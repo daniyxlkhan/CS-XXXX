@@ -10,6 +10,6 @@ public class SavingsAccount extends Account{
     }
 
     public void applyInterest() throws NegativeException {
-        super.depositMoney(super.getBalance()*(interestRate/100));
+        setBalance(super.getBalance()*(interestRate+1));
     }
 }

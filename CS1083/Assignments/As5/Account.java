@@ -17,8 +17,6 @@ public abstract class Account implements Bank {
         this.balance = balanceAmount;
     }
 
-    
-
     public void withdrawMoney(double amount) throws InsufficientFundsException, NegativeException {
         if (amount < 0) {
             throw new NegativeException("Withdraw amounts must be positive.");
