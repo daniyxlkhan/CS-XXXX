@@ -1,4 +1,4 @@
-public abstract class Item implements Purchasable, Comparable<Item> {
+public abstract class Item implements Purchasable, Comparable<Item>{
     private String title;
     private double initialPrice;
 
