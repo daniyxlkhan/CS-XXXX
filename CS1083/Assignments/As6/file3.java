@@ -9,8 +9,8 @@ public class file3 {
             double latitude = inStream.readDouble();
             double longitude = inStream.readDouble();
             
-            System.out.println("Latitude: " + latitude);
-            System.out.println("Longitude: " + longitude);
+            System.out.println("Longitude: " + latitude);
+            System.out.println("Latitude: " + longitude);
 
             inStream.close();
         } catch (FileNotFoundException fnfe) {
@@ -20,6 +20,3 @@ public class file3 {
         }
     }
 }
-
-// Latitude: 45.950102
-// Longitude: -66.642087
