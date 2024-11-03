@@ -10,7 +10,7 @@ public class TicketApp {
     format.setMaximumFractionDigits(2);
     format.setMinimumFractionDigits(2);
 
-    TrainTicket grace = new TrainTicket("Grace Hopper", 2, 1150);
+    TrainTicket grace = new TrainTicket("Grace Hopper", 2, 1050);
     TrainTicket joy = new TrainTicket("Joy Buolamwini", 1, 820);
     TrainTicket tim = new TrainTicket("Tim Berners-Lee", 2, 755);
     TrainTicket margaret = new BusinessTicket("Margaret Hamilton", 0, 690, true);

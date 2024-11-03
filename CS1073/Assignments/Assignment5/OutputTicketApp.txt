@@ -1,6 +1,6 @@
 Passenger & Trip Distance	Bags	Cost
 =========================	=====	========
-Grace Hopper (1150.0km) 	2	$1,642.50
+Grace Hopper (1050.0km) 	2	$1,507.50
 Joy Buolamwini (820.0km) 	1	$660.00
 Tim Berners-Lee (755.0km) 	2	$958.25
 Margaret Hamilton (690.0km) 	0	$988.25
