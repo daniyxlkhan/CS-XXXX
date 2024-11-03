@@ -10,13 +10,13 @@ public class CaeserCipher {
             PrintWriter pw = new PrintWriter("Encrypted.txt");
 
             while (scan.hasNextLine()) {
-                String line = scan.nextLine();
-                String[] parts = line.split(","); // splitting the line into key and message using comma
-                int key = Integer.parseInt(parts[0].trim()); // reading in the key and removing whitespaces
-                String msg = parts[1].trim(); // The message to be encrypted and removing whitespaces
-                
-                pw.println(encrypt(msg, key));
-            } 
+                int key = Integer.parseInt(scan.next().trim());    
+                String msg = scan.nextLine().trim();               
+                if (msg.startsWith(",")) {                       
+                    msg = msg.substring(1).trim();
+                }
+                pw.println(encrypt(msg, key));                     
+            }
             scan.close();
             pw.close();
         } catch (NumberFormatException nfe) {
@@ -41,7 +41,7 @@ public class CaeserCipher {
         return currentChar + encrypt(msg.substring(1), key);
     }   
 
-    /* 
+    /* Iterative
     public static String lencrpt(String msg, int key) {
         String array[] = new String[msg.length()];
 
