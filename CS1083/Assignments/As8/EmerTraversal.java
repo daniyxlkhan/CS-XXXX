@@ -82,6 +82,7 @@ public class EmerTraversal {
     public static void flood(char[][] map, int severityLevel, int row, int column, char waterBody) {
         if (waterBody == 'R') { // if waterbody is a river
             // Down
+            // Character.getNumericValue(map[row+1][column]) instead of this we could also use map[row][col] - 48
             if (row + 1 < map.length && Character.getNumericValue(map[row+1][column]) <= severityLevel) {
                 map[row+1][column] = waterBody;
                 flood(map, severityLevel, row+1, column, waterBody);
