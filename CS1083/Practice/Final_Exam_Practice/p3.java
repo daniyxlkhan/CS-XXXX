@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 public class p3 {
     Node head;
     Node tail;
@@ -86,7 +88,7 @@ public class p3 {
         
         return false;
     }
-    
+
     public String toString() {
         Node current = head;
         String toReturn = "";

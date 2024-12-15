@@ -1,37 +1,29 @@
-public class ArrayStack {
+public class ArrayQueue {
     private Employee array[];
     private int comp;
 
-    public ArrayStack () {
+    public ArrayQueue() {
         array = new Employee[10];
         comp = 0;
     }
 
-    public void push(Employee e) {
+    public void enqueue(Employee e) {
         if (comp < 10) {
             array[comp] = e;
             comp++;
-        }  
+        }
     }
 
-    public Employee pop() {
+    public Employee dequeue() {
         if (comp > 0) {
+            Employee toReturn = array[0];
+            for (int i = 0; i < comp-1; i++) {
+                array[i] = array[i+1];
+            }
             comp--;
-            return array[comp];
+            return toReturn;
         }
         return null;
-    }
-
-    public Employee peek() {
-        return array[comp];
-    }
-
-    public boolean isEmpty() {
-        return comp == 0;
-    }
-
-    public int size() {
-        return comp;
     }
 
     public String toString() {
@@ -41,5 +33,4 @@ public class ArrayStack {
         }
         return toReturn;
     }
-
 }
