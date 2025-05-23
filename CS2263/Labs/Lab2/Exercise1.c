@@ -6,6 +6,7 @@ int g1(int a, int b)
     int c = (a + b) * b;
     putchar('\n');
     printf("Address of a in g1: %p\n", &a);
+    printf("Address of a: %p\n", (void *)&a);
     printf("Address of b in g1: %p\n", &b);
     printf("Address of c in g1: %p\n", &c);
     printf("g1: %d %d %d\n", a, b, c);

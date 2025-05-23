@@ -1,14 +1,29 @@
 #include <stdio.h>
+#include <string.h>
+
+void reverseArray (int *arr, int len);
 
 int main() {
-    int i = 0, j, a[5];
-    printf("Enter some integer, followed by ^D on blank line: ");
-    while (scanf("%d", &a[i]) == 1) {
-        i++;
+    char src[] = "UNB Computer Science";
+    char *found = strstr(src, "Computer");
+
+    if (found) {
+        printf("Found at %li\n", found - src);
+    } else {
+        printf("Not found\n");
     }
-    for (j = 0; j < i; j++) {
-        printf("%d", a[j]);
-    }
-    printf("\n");
+
     return 0;
+}
+
+void reverseArray(int *arr, int len) {
+    int start = 0;
+    int end = len - 1;
+    while(start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
 }

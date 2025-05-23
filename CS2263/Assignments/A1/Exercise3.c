@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void displayPrompt(char prompt[], int length);
+void printArray(char prompt[], int length);
 void printEachNumber(unsigned int x);
 void convertToDecimal(char binaryArr[], int length);
 
@@ -13,7 +13,7 @@ int main (int argc, char ** argv) {
         't','o',' ','d','e','c','i','m','a','l',':'
     };
     int promptLength = sizeof(prompt);
-    displayPrompt(prompt, promptLength);
+    printArray(prompt, promptLength);
     
     int i = 0;
     int ch;
@@ -37,11 +37,10 @@ void convertToDecimal(char binaryArr[], int length) {
     printEachNumber(result);
 }
 
-void displayPrompt(char prompt[], int length) {
+void printArray (char array[], int length) {
     for (int i = 0; i < length; i++) {
-        putchar(prompt[i]);
+        putchar(array[i]);
     }
-    putchar('\n');
 }
 
 void printEachNumber(unsigned int x) {
