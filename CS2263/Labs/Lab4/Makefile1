@@ -1,0 +1,25 @@
+GCC = gcc
+CFLAGS = -g -Wall -Wshadow
+
+prog: Exercise1.o
+	$(GCC) $(CFLAGS) Exercise1.o -o prog
+
+Exercise1.o: Exercise1.c
+	$(GCC) $(CFLAGS) -c Exercise1.c
+
+testall: test1 test2 test3
+
+test1: prog
+	./prog inputs/input1.txt > outputs/output1.txt
+	diff expected/expected1.txt outputs/output1.txt
+
+test2: prog
+	./prog inputs/input2.txt > outputs/output2.txt
+	diff expected/expected2.txt outputs/output2.txt
+
+test3: prog
+	./prog inputs/input3.txt > outputs/output3.txt
+	diff expected/expected3.txt outputs/output3.txt
+
+clean:
+	rm -f *.o prog outputs/*
