@@ -1,0 +1,1 @@
+Input patient data: Diagnosis of the closest previous patient: 1 
